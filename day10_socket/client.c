@@ -17,9 +17,9 @@ int main(int argc, char *argv[]){
         return -1;
     }
     int fd = socket(AF_INET, SOCK_STREAM, 0);
-    struct sockaddr_in client_addr, server_addr;
+    struct sockaddr_in server_addr;
 
-    bind(fd, (struct sockaddr*)&client_addr, sizeof(client_addr)); //绑定fd
+    //bind(fd, (struct sockaddr*)&client_addr, sizeof(client_addr)); //绑定fd
 
     server_addr.sin_family = AF_INET;
     server_addr.sin_port = htons(atoi(argv[2]));
