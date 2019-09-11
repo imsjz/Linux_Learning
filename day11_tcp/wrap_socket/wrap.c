@@ -1,3 +1,8 @@
+/*
+ * @Author: sanjayzhong
+ * @Github: https://github.com/sanjayzzzhong
+ * @Date: 2019-09-07 13:21:43
+ */
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -86,7 +91,7 @@ ssize_t Read(int fd, void *ptr, size_t nbytes)
 again:
 	if ( (n = read(fd, ptr, nbytes)) == -1) 
     {
-		if (errno == EINTR)
+		if (errno == EINTR) //被信号中断了
 			goto again;
 		else
 			return -1;
@@ -208,23 +213,23 @@ ssize_t Readline(int fd, void *vptr, size_t maxlen)
 {
 	ssize_t n, rc;
 	char    c, *ptr;
-	ptr = vptr;
+	ptr = vptr; //ptr指向vptr
 
 	for (n = 1; n < maxlen; n++) 
     {
-		if ((rc = my_read(fd, &c)) == 1)    //ptr[] = hello\n
+        if ((rc = my_read(fd, &c)) == 1)    //ptr[] = hello\n
         {
-			*ptr++ = c;
-			if (c == '\n')
-				break;
-		} 
-    else if (rc == 0) 
-    {
-			*ptr = 0;
-			return n-1;
-		} 
+            *ptr++ = c;
+            if (c == '\n')
+                break;
+        }
+        else if (rc == 0)
+        {
+            *ptr = 0;
+            return n-1;
+        }
         else
-			return -1;
+            return -1;
 	}
 	*ptr = 0;
 
