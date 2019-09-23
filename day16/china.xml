@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<china>
+    <city>
+        <name isbig="true">北京</name>
+        <area></area>
+        <population></population>
+        <GDP></GDP>
+    </city>
+    <city>
+        <name isbig="true">东京</name>
+        <area></area>
+        <population></population>
+        <GDP></GDP>
+    </city>
+</china>

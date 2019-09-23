@@ -1,0 +1,30 @@
+<!--注释-->
+<!--文件头-->
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 树状结构的标签-->
+<!-- 根标签  自个起名   只有一个 -->
+<!-- 标签的值区分大小写-->
+
+
+
+<!-- 标签一般成对出现 -->
+<zhangsan>
+    <!-- 不成对 -->
+    <lisi/>
+    <!-- 子标签 -->
+    <child>
+        <!--没有子标签, 那么标签必须有值-->
+        <!-- 标签可以设置属性  report: 属性,属性值需要使用""包含-->
+        <name report="yes">zhang1</name>
+        <age month="1">12</age>
+        <sex>男</sex>
+    </child>
+
+    <!-- 子标签 -->
+    <child>
+        <name>zhang2</name>
+        <age>4</age>
+        <sex>女</sex>
+    </child>
+
+</zhangsan>
