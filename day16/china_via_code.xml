@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<china>
+	<city>
+		<name isbig="yes">
+			北京
+		</name>
+		<area>
+			16410 平方公里
+		</area>
+	</city>
+	<city>
+		<name>
+			东京
+		</name>
+	</city>
+</china>

@@ -1,0 +1,65 @@
+{
+    "奔驰": {
+        "factory": "一汽大众",
+        "last": 31,
+        "price": 83,
+        "sell": 49,
+        "sum": 80
+    },
+    "奥迪A6": {
+        "factory": "一汽大众",
+        "last": 15,
+        "price": 36,
+        "sell": 35,
+        "sum": 50
+    },
+    "宝来": {
+        "factory": "一汽大众",
+        "last": 75,
+        "price": 41,
+        "sell": 5,
+        "sum": 80
+    },
+    "富康": {
+        "factory": "二汽神龙",
+        "last": 38,
+        "price": 28,
+        "sell": 22,
+        "sum": 60
+    },
+    "帕萨特": {
+        "factory": "上海大众",
+        "last": 42,
+        "price": 27,
+        "sell": 23,
+        "sum": 65
+    },
+    "捷达": {
+        "factory": "一汽大众",
+        "last": 69,
+        "price": 10,
+        "sell": 11,
+        "sum": 80
+    },
+    "标致307": {
+        "factory": "二汽神龙",
+        "last": 58,
+        "price": 27,
+        "sell": 12,
+        "sum": 70
+    },
+    "桑塔纳": {
+        "factory": "上海大众",
+        "last": 63,
+        "price": 25,
+        "sell": 12,
+        "sum": 75
+    },
+    "毕加索": {
+        "factory": "二汽神龙",
+        "last": 29,
+        "price": 39,
+        "sell": 21,
+        "sum": 50
+    }
+}
