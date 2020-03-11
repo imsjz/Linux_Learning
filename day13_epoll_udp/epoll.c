@@ -86,7 +86,7 @@ int main(int argc, char *argv[])
             //已经连接的客户端发消息过来
             else{
                 //处理已连接的客户端发送过来的数据,如果不是读的不处理
-                if(!(all[i].events & EPOLLIN)){ //!和&优先级是一样的,加不加括号一样,从右到左
+                if(!(all[i].events & EPOLLIN)){     //!和&优先级是一样的,加不加括号一样,从右到左
                     continue;
                 }
                 //读数据

@@ -88,7 +88,7 @@ int main(int argc, char *argv[])
                     perror("recv error");
                     exit(1);
                 }
-                else if(len == 0){
+                else if(len == 0) {
                     printf("客户端已经断开连接\n");
                     close(i);
                     //从读集合中删掉
